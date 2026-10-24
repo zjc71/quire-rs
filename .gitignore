@@ -1,0 +1,6 @@
+/target
+/dist
+**/*.rs.bk
+*.svg.tmp
+*.docx
+!tests/fixtures/*.docx

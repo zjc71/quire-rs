@@ -1,0 +1,23 @@
+[package]
+name = "quire-cli"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+description = "Command line interface for the Quire document engine"
+publish = false
+
+[[bin]]
+name = "quire"
+path = "src/main.rs"
+
+[dependencies]
+quire-base.workspace = true
+quire-model.workspace = true
+quire-io.workspace = true
+quire-text.workspace = true
+quire-layout.workspace = true
+quire-paint.workspace = true
+quire-edit.workspace = true
+clap.workspace = true
+anyhow.workspace = true

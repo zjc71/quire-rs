@@ -1,0 +1,39 @@
+﻿[workspace]
+resolver = "3"
+members = [
+    "crates/quire-base",
+    "crates/quire-model",
+    "crates/quire-io",
+    "crates/quire-text",
+    "crates/quire-layout",
+    "crates/quire-paint",
+    "crates/quire-edit",
+    "crates/quire-cli",
+    "crates/quire-ui",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+license = "Apache-2.0"
+authors = ["Quire contributors"]
+
+[workspace.dependencies]
+quire-base = { path = "crates/quire-base" }
+quire-model = { path = "crates/quire-model" }
+quire-io = { path = "crates/quire-io" }
+quire-text = { path = "crates/quire-text" }
+quire-layout = { path = "crates/quire-layout" }
+quire-paint = { path = "crates/quire-paint" }
+quire-edit = { path = "crates/quire-edit" }
+
+thiserror = "2"
+quick-xml = "0.37"
+zip = { version = "2", default-features = false, features = ["deflate"] }
+clap = { version = "4", features = ["derive"] }
+anyhow = "1"
+
+[profile.release]
+lto = "thin"
+codegen-units = 1

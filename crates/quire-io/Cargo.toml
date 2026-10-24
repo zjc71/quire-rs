@@ -1,0 +1,15 @@
+[package]
+name = "quire-io"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+description = "DOCX reader and writer for Quire"
+publish = false
+
+[dependencies]
+quire-base.workspace = true
+quire-model.workspace = true
+quick-xml.workspace = true
+encoding_rs = "0.8"
+zip.workspace = true

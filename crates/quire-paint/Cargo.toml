@@ -1,0 +1,14 @@
+﻿[package]
+name = "quire-paint"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+description = "Device-independent paint scene and SVG backend for Quire"
+publish = false
+
+[dependencies]
+quire-base.workspace = true
+quire-model.workspace = true
+quire-layout.workspace = true
+base64 = "0.22"

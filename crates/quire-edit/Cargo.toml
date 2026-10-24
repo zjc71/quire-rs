@@ -1,0 +1,12 @@
+[package]
+name = "quire-edit"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+description = "Editing commands and undo history for Quire"
+publish = false
+
+[dependencies]
+quire-base.workspace = true
+quire-model.workspace = true
